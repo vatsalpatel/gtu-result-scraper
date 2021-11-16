@@ -6,7 +6,7 @@ Python 3<br/>
 Tesseract OCR<br/> 
 pytesseract<br/>
 Selenium(With gecko driver for firefox)<br/>
-Gecko Driver Executable(included .exe file)
+Gecko Driver Executable(included .exe file)<br/>
 Pillow<br/>
 
 ## Setup
@@ -16,8 +16,8 @@ Download and install Tesseract OCR<br/>
 ```
 pip install pytesseract selenium Pillow
 ```
-Executable is included in the repo but you may have to add it to PATH. No need to download again.
-`Gecko Driver for Firefox(Included)`: https://github.com/mozilla/geckodriver/releases<br/>
+Executable is included in the repo but you may have to add it to PATH. No need to download again.<br/>
+`Gecko Driver for Firefox(Included)`: https://github.com/mozilla/geckodriver/releases
 
 ## Run
 Change the result URL and populate the enrs list with desired enrollment numbers and simply run the file `scraper.py`.
@@ -26,7 +26,7 @@ python scraper.py
 ```
 
 ## Captcha
-GTU Captchas are text and digit based which allows us to use Optical Character Recognition(OCR) <br/><br/>
+GTU Captchas are text and digit based which allows us to use Optical Character Recognition(OCR). <br/>
 However, The captcha characters are crossed out so we need to remove this line for OCR to be able to parse the image.<br/>
 
 #### Before:
