@@ -34,7 +34,7 @@ def text_captcha(captcha_image):
     bigcaptcha = captcha_image.resize(new_size)
     img = binirize(bigcaptcha, 160)
     w = img.width
-    # remove black line from captcha (pixels 68 to 73)
+    # remove black line from captcha (rows 68 to 73)
     for y in range(68, 73):
         for x in range(0, w):
             if img.getpixel((x, y - 1)) < 100:
